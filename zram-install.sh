@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 # Copy file in system directory
 sudo cp -v zram.default /etc/init.d/
