@@ -12,6 +12,9 @@ echo -e "-----------------------";
 echo -e "\nSWAP Stats:\n-----------\n";
 swapon -s | grep zram
 echo -e "\nMemory Stats:\n-------------\n";
-free -m -l -h -t
+free -mlht
 
+# Small break
+echo -e "Press any key to exit...\n"
+read
 exit 0
