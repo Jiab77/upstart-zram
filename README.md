@@ -1,36 +1,32 @@
-# upstart-zram
+# Bye bye Github...
 
-Creates a swap drives into memory using debian upstart
+Why do I'm leaving Github ?
 
-Adapted from the work of Linus Torvalds - https://github.com/torvalds/linux/blob/master/tools/testing/selftests/zram/zram_lib.sh
+> Because I can't live with the idea that Microsoft now owns the biggest place where the open source code is / was hosted.
 
-And [eXtremeSHOK.com](https://extremeshok.com/) - https://raw.github.com/gionn/etc/master/init.d/zram
+And ?
 
-# Installation
+> Also because Github didn't took the time to ask us, developpers, users, if we would be ok with this operation and my reply would be **NO!**
 
-Just set `install.sh` as executable like this:
+# New home
 
-```shell
-chmod -v +x install.sh
-./install.sh
-```
+But where could you find my code now ?
 
-> The install script should be already executable but if not, proceed as explained above.
+> I just moved to Gitlab as many other devs did.
 
-# Disable existing swap space
+# Gists
 
-After the installation, you might have to remove / delete your existing swap partition. The swap partition is completely useless with `zRam`.
+My gists will stay on Github for few reasons:
 
-__*There is plenty of methods to do that and it depends of your configuration.*__
+ * Github has a better audience on Google
+ * Did not found the same feature with the same visibility on Gitlab
 
-This script was tested with and without `LVM+LUKS` and you just have to delete your swap partition with the tool of your choice (`fdisk`, `gparted`, `LVM` Tools [`vg`, `pv`, `lv`]).
+Place of my gists: https://gist.github.com/jiab77
 
-# Known Issues
+# Projects
 
-For an unknown reason (*for now*), `zRam` seems to be incompatible with `ecryptfs` used for encrypt your home folder when you can't do a full disk encryption.
+I might just keep the projects names on Github too for the same reason as above, but with only the present file and a link to the new project home.
 
-> I guess that's because it requires an encrypted swap space...
+# Repository
 
-# Contribute
-
-Feel free to contribute to this project with your pull requests :+1:
+The new place is here: https://gitlab.com/jiab77/upstart-zram
